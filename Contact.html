@@ -1,39 +1,74 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Claire Lee Bolam</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Contact Me</h1>
-        <nav>
+        <div class="container">
+            <h1>Get in Touch</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="my-work.html">My Work</a></li>
+                <li><a href="MyWork.html">Portfolio</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section>
-        <h2>Get in Touch with Claire</h2>
-        <p>Email: claire.lee.bolam@gmail.com</p>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <input type="submit" value="Send">
-        </form>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Let's Connect</h2>
+                <p>Feel free to reach out for collaborations or just to say hello!</p>
+                
+                <div class="contact-info">
+                    <p>Email: claire.lee.bolam@gmail.com</p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Claire Lee Bolam. All rights reserved.</p>
+        <div class="container">
+            <div class="copyright">
+                © 2025 Claire Lee Bolam. All rights reserved.
+            </div>
+        </div>
     </footer>
 </body>
 </html>

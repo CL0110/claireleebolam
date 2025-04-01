@@ -3,68 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claire Lee Bolam's Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Claire Lee Bolam | Data & Business Analytics Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* About Section with Profile */
+        .about {
+            padding: 4rem 0;
+        }
+
+        .about .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .profile-section {
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .profile-section h1 {
+            font-size: 1.5rem;
+            margin: 0.25rem 0;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .profile-section h2 {
+            font-size: 1rem;
+            margin: 0.25rem 0;
+            color: #34495e;
+            font-weight: normal;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+            background-color: #f5f5f5;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style-position: inside;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+        }
+
+        footer nav ul {
+            margin-bottom: 1rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .about .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-section {
+                margin-bottom: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
+    <nav>
+        <div class="container">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="MyWork.html">My Work</a></li> <!-- Updated link here -->
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="MyWork.html">My Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <img src="Me.jpg" alt="MyPicture", width="190", height="300">
-        <h1>Hello & Welcome!</h1>
-        <h2>I'm Claire Lee Bolam</h2>
-        <p> Results-driven data and business analytics expert with extensive experience in statistical modeling, and business intelligence solutions. Specialized in developing and implementing comprehensive data strategies that combine advanced analytics, predictive modeling, and automated reporting systems. Proven expertise in translating complex data into actionable business insights to achieve strategic objectives and drive measurable growth.
+        </div>
+    </nav>
 
-</p>
-    </header>
+    <section class="about">
+        <div class="container">
+            <div class="profile-section">
+                <img src="Me.jpg" alt="Claire Lee Bolam" class="profile-image">
+                <h1>Claire Lee Bolam</h1>
+                <h2>Data & Business Analytics Expert</h2>
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Results-driven data and business analytics expert with extensive experience in statistical modeling and business intelligence solutions. Specialized in developing and implementing comprehensive data strategies that combine advanced analytics, predictive modeling, and automated reporting systems. Proven expertise in translating complex data into actionable business insights to achieve strategic objectives and drive measurable growth.</p>
+            </div>
+        </div>
+    </section>
 
-    <section id="my-work">
-        <h2>Data-Driven Services</h2>
-        <article>
-            <h3>Business Strategy</h3>
-            <ul>
-                <li>Robust Revenue Forecasting</li>
+    <section class="services">
+        <div class="container">
+            <h2>Data-Driven Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Business Strategy</h3>
+                    <ul>
+                        <li>Robust Revenue Forecasting</li>
+                        <li>Market Analysis</li>
+                        <li>Growth Strategy Development</li>
+                    </ul>
+                </div>
                 
-            </ul>
-        </article>
-        <article>
-            <h3>Financial Modeling and Valuation Analysis</h3>
-            <ul>
-                <li>Large Language Classifier Models</li>
+                <div class="service-card">
+                    <h3>Financial Modeling</h3>
+                    <ul>
+                        <li>Large Language Classifier Models</li>
+                        <li>Predictive Analytics</li>
+                        <li>Risk Assessment</li>
+                    </ul>
+                </div>
                 
-            </ul>
-        </article>
-        <article>
-            <h3>Data Analysis and Visualization</h3>
-            <ul>
-                <li>Data Visualization & Dashboards</li>
-                <li>A/B Testing</li>
-                <li>Hypothesis Testing</li>
-                <li>Statistical Modeling</li>
-            </ul>
-        </article>
+                <div class="service-card">
+                    <h3>Data Analysis</h3>
+                    <ul>
+                        <li>Data Visualization & Dashboards</li>
+                        <li>A/B Testing</li>
+                        <li>Statistical Modeling</li>
+                        <li>Hypothesis Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="MyWork.html">My Work</a></li> <!-- Updated link here -->
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="copyright">
-            © Claire Lee Bolam 2025. All rights reserved.
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="MyWork.html">My Work</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                © 2025 Claire Lee Bolam. All rights reserved.
+            </div>
         </div>
     </footer>
 </body>
