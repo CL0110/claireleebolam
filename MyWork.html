@@ -3,40 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work</title>
+    <title>About Me - Claire Lee Bolam</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-    <h1>My Work</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="MyWork.html">My Work</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-work.html">My Work</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-</header>
 
+   <main>
+    <header>
+        <h1>My Work</h1>
+        <p>Showcasing my best projects in data and business analytics</p>
+    </header>
 
-
-    <section class="portfolio">
-        <div class="container">
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Screenshot of Project 1">
-                <h3>Project 1</h3>
-                <p>A brief description of Project 1.</p>
-                <a href="https://github.com/link-to-project1" class="btn">View Project</a>
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="project1-screenshot.png" alt="Screenshot of Project 1">
+                <div class="content">
+                    <h3>Project 1</h3>
+                    <p>A brief description of Project 1.</p>
+                    <a href="#">View Project</a>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Screenshot of Project 2">
-                <h3>Project 2</h3>
-                <p>A brief description of Project 2.</p>
-                <a href="https://github.com/link-to-project2" class="btn">View Project</a>
+            <div class="project-item">
+                <img src="project2-screenshot.png" alt="Screenshot of Project 2">
+                <div class="content">
+                    <h3>Project 2</h3>
+                    <p>A brief description of Project 2.</p>
+                    <a href="#">View Project</a>
+                </div>
             </div>
+            <!-- Add more project items as needed -->
         </div>
     </section>
+</main>
+
+
+    <footer>
+        <p>&copy; 2025 Claire Lee Bolam. All rights reserved.</p>
+    </footer>
 </body>
 </html>
